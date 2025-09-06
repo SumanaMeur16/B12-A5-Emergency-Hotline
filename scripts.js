@@ -42,3 +42,15 @@ function clearHistory(){
 
 }
 
+function heart(){
+    let heartCountIncrease = document.getElementById("heart-count");
+    let increase = Number(heartCountIncrease.innerText) +1;
+    heartCountIncrease.textContent = increase
+}
+
+function copybtn(copyB){
+    let copyButton = document.getElementById(copyB).querySelector("h3").innerText;
+    let cB = String(copyButton);
+    navigator.clipboard.writeText(cB);
+    alert(`Copied Number ${copyButton}`)
+}
