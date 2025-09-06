@@ -36,3 +36,9 @@ function makeACall(Data){
     
 }
 
+function clearHistory(){
+    let clearCallHistory = document.getElementById("callHistory")
+    clearCallHistory.innerHTML = "";
+
+}
+
