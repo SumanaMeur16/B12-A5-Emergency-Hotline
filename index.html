@@ -29,7 +29,7 @@
                     <p class="font-bold" id="coins">100</p>
                     <img class="w-6 h-6" src="./assets/coin.png" alt=""></img>
                 </div>
-                <button class="btn btn-active bg-[#00A63E] text-white rounded-3xl">2 Copy</button>
+                <button class="btn btn-active bg-[#00A63E] text-white rounded-3xl"><span id="copy-count">0</span>Copy</button>
             </div>
         </nav>
         <!-- banner section -->
@@ -80,7 +80,7 @@
                          <h3 class="card-title font-bold text-2xl">999</h3>
                          <div class="badge badge-ghost rounded-2xl">Police</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-2')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-2')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                          <h3 class="card-title font-bold text-2xl">999</h3>
                          <div class="badge badge-ghost rounded-2xl">Fire</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-3')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-3')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                          <h3 class="card-title font-bold text-2xl">1994-999999</h3>
                          <div class="badge badge-ghost rounded-2xl">Health</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-4')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-4')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                          <h3 class="card-title font-bold text-2xl">109</h3>
                          <div class="badge badge-ghost rounded-2xl">Help</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-5')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-5')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                          <h3 class="card-title font-bold text-2xl">106</h3>
                          <div class="badge badge-ghost rounded-2xl">Govt.</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-6')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-6')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                          <h3 class="card-title font-bold text-2xl">16216</h3>
                          <div class="badge badge-ghost rounded-2xl">Electricity</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-7')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-7')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                          <h3 class="card-title font-bold text-2xl">16445</h3>
                          <div class="badge badge-ghost rounded-2xl">NGO</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-8')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-8')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>
@@ -234,7 +234,7 @@
                          <h3 class="card-title font-bold text-2xl">163</h3>
                          <div class="badge badge-ghost rounded-2xl">Travel</div>
                         <div class="card-actions flex-nowrap">
-                         <button class="btn w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button> 
+                         <button class="btn w-1/2 rounded-lg" onclick="copybtn('card-9')"><i class="fa-regular fa-copy"></i>Copy</button> 
                          <button class="btn w-1/2 bg-[#00A63E] text-white rounded-lg" onclick="makeACall('card-9')"><i class="fa-solid fa-phone"></i>Call</button> 
                         </div>
                     </div>

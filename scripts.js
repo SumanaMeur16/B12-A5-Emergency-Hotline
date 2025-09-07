@@ -1,5 +1,29 @@
 
-function message(Data){
+// function message(Data){
+//     let totalCoins = document.getElementById("coins")
+//     let nowCoins = totalCoins.innerText - 20;
+    
+
+//     if(totalCoins.innerText < 20){
+//         alert("Insufficient Coin Balance")
+//     }
+//     else{
+//        let serviceName = document.getElementById(Data).querySelector("h2").innerText;
+//        let serviceNumber = document.getElementById(Data).querySelector("h3").innerText;
+//        alert(`Calling ${serviceName} at ${serviceNumber}`)
+//         totalCoins.textContent = nowCoins
+//     }
+// }
+
+function makeACall(Data){
+    // message(Data)
+    let serviceName = document.getElementById(Data).querySelector("h2").innerText;
+    let serviceNumber = document.getElementById(Data).querySelector("h3").innerText;
+    const now = new Date();
+    const myTime = now.toLocaleTimeString();
+
+    let newCallHistory = document.getElementById("callHistory")
+
     let totalCoins = document.getElementById("coins")
     let nowCoins = totalCoins.innerText - 20;
     
@@ -8,21 +32,8 @@ function message(Data){
         alert("Insufficient Coin Balance")
     }
     else{
-       let serviceName = document.getElementById(Data).querySelector("h2").innerText;
-       let serviceNumber = document.getElementById(Data).querySelector("h3").innerText;
-       alert(`Calling ${serviceName} at ${serviceNumber}`)
+    alert(`Calling ${serviceName} at ${serviceNumber}`)
         totalCoins.textContent = nowCoins
-    }
-}
-
-function makeACall(Data){
-    message(Data)
-    let serviceName = document.getElementById(Data).querySelector("h2").innerText;
-    let serviceNumber = document.getElementById(Data).querySelector("h3").innerText;
-    const now = new Date();
-    const myTime = now.toLocaleTimeString();
-
-    let newCallHistory = document.getElementById("callHistory")
     newCallHistory.innerHTML += `<div class="bg-slate-100 rounded-lg w-full flex items-center px-4 py-3 my-2">
                         <div class="w-2/3 text-start">
                             <p class="font-bold">${serviceName}</p>
@@ -35,6 +46,9 @@ function makeACall(Data){
    
     
 }
+}
+
+
 
 function clearHistory(){
     let clearCallHistory = document.getElementById("callHistory")
@@ -53,4 +67,8 @@ function copybtn(copyB){
     let cB = String(copyButton);
     navigator.clipboard.writeText(cB);
     alert(`Copied Number ${copyButton}`)
+
+    let copyCounts = document.getElementById("copy-count");
+    let copyCountIncrease = Number(copyCounts.innerText) + 1;
+    copyCounts.textContent = copyCountIncrease
 }
